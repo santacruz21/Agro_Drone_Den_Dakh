@@ -1,0 +1,19 @@
+{
+  "name": "agro_drone_den_dakh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp build"
+  },
+  "author": "Denys Dakh",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-deleted": "^1.0.0",
+    "gulp-terser": "^2.1.0"
+  }
+}
