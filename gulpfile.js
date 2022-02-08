@@ -1,4 +1,4 @@
-const { src, dest, series } = require('gulp');
+const { src, dest, series, watch } = require('gulp');
 const gulp = require('gulp');
 const terser = require('gulp-terser')
 const deleted = require("gulp-deleted")
@@ -10,10 +10,12 @@ const rename = require('gulp-rename')
 const plumber = require('gulp-plumber')
 const imagemin = require('gulp-imagemin')
 const svgstore = require('gulp-svgstore')
+const server = require('browser-sync')
 
 const pipeline = require('readable-stream').pipeline
 const uglify = require('gulp-uglify-es').default
-const del = require('del')
+const del = require('del');
+const { notify } = require('browser-sync');
 
 
 const html = function() {
@@ -27,10 +29,10 @@ const html = function() {
 // }   
 
  
-const clean = function() {
-    return gulp.src('./source').pipe(deleted({dest: "./build", patterns: ["**/**"]}))
-     .pipe(gulp.dest)
-}
+// const clean = function() {
+//     return gulp.src('./source').pipe(deleted({dest: "./build", patterns: ["**/**"]}))
+//      .pipe(gulp.dest)
+// }
 
 function css () {
     return src('./source/scss/**/*.scss')
@@ -80,7 +82,24 @@ function js() {
     )
 }
 
-function copy() {
+function serve (){
+    server.init({
+        server: 'build/',
+        notify: false,
+        open: true,
+        cors: true,
+        ui: false
+    })
+    watch('./source/scss/**/*scss', series(css, cssNomin, refresh))
+    watch('source/*.html', series(html,refresh))
+}
+
+function refresh (done){
+    server.reload()
+    done() 
+}
+ 
+function copy() { 
     return src([
         './source/fonts/**/*',
         './source/*.ico'
@@ -101,6 +120,7 @@ exports.css = css
 exports['css-nomin'] = cssNomin 
 exports.images = images 
 exports.js = js
+exports.serve = serve
 exports.build = gulp.series(clean,html, js)
 exports.start = series(
     clean,
