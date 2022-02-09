@@ -1,7 +1,11 @@
 .header {
   display: flex;
-  justify-content: space-between;
 }
-.header_logo {
-  padding: 100px;
+.header__wrapper {
+  background-color: #8c8cee;
+}
+
+.links__item {
+  font-size: 110px;
+  color: brown;
 }

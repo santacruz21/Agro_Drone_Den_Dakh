@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"style.min.scss","sourcesContent":[]}
+{"version":3,"sources":["blocks/welcome-section.scss","blocks/welcome-section.css"],"names":[],"mappings":"AAAA,iBACI,YCDyB,CDGzB,2BACI,YCJ6D,CDK7D,WCLyE","file":"style.min.scss","sourcesContent":[".welcome-section{\n    display: flex;\n\n    &__title-h2{\n        font-size: 48;\n        color: brown;\n    }\n}",".welcome-section{display:flex}.welcome-section__title-h2{font-size:48;color:brown}"]}

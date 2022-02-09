@@ -1,8 +1,13 @@
 .header{
     display: flex;
-    justify-content: space-between;
 
-    &_logo{
-        padding: 100px;
+    &__wrapper {
+        background-color: rgb(140, 140, 238);
+    }
+}
+.links{
+    &__item{
+        font-size: 110px;
+        color: brown;
     }
 }
