@@ -35,7 +35,7 @@ const html = function() {
 // }
 
 function css () {
-    return src('./source/scss/**/*.scss')
+    return src('source/scss/style.scss')
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())
