@@ -1,8 +1,14 @@
-@import url(./blocks/header.scss);
+@import './blocks/variables.scss';
+@import './blocks/fons.scss';
+@import './blocks/global.scss';
+@import './blocks/header';
+@import './blocks/section.scss';
+@import './blocks/welcome-section';
+
 @import url(./blocks/icon.scss);
 @import url(./blocks/nav.scss);
 @import url(./blocks/number-section.scss);
-@import url(./blocks/paragraph-1.scss);
+@import './blocks/paragraph-1.scss';
 @import url(./blocks/paragraph-2.scss);
 @import url(./blocks/paragraph-3.scss);
 @import url(./blocks/paragraph-4.scss);
@@ -10,7 +16,7 @@
 @import url(./blocks/section-button.scss);
 @import url(./blocks/section-info.scss);
 @import url(./blocks/section-services.scss);
-@import url(./blocks/table-section.scss);
+@import './blocks/table-section.scss';
 @import url(./blocks/additional.scss);
 @import url(./blocks/advantages.scss);
 @import url(./blocks/footer.scss);

@@ -41,7 +41,7 @@ function css () {
         .pipe(sass())
         .pipe(csso())
         .pipe(autoprefixer())
-        .pipe(rename('style.min.scss'))
+        .pipe(rename('style.min.css'))
         .pipe(sourcemaps.write('./'))
         .pipe(dest('build/css'))
     } 

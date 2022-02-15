@@ -1,0 +1,22 @@
+.table-section{
+
+&__container{
+    display: flex;
+}
+&__title{
+color: #333333;
+font-size: 36px;
+}
+&__title-tab{
+    color: #2A7AC0;
+    font-size: 24px;
+}
+&__text{
+    color: #333333;
+    font-size: 16px;
+}
+&__fat{
+    color: #333333;
+    font-weight: 700;
+}
+}
