@@ -54,7 +54,7 @@ function cssNomin () {
     } 
 
 function images () {
-    return src('./sourse/img/**/*.{jpg,jpeg,png}')
+    return src('./source/img/**/*.{jpg,jpeg,png}')
     .pipe(imagemin([
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.mozjpeg({progressive: true})
