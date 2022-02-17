@@ -1,19 +1,9 @@
-@charset "UTF-8";
+img {
+  width: 100%;
+  height: auto;
+}
+
 /* roboto-regular - latin */
-@import url(./blocks/icon.scss);
-@import url(./blocks/nav.scss);
-@import url(./blocks/number-section.scss);
-@import url(./blocks/paragraph-2.scss);
-@import url(./blocks/paragraph-3.scss);
-@import url(./blocks/paragraph-4.scss);
-@import url(./blocks/section-about.scss);
-@import url(./blocks/section-button.scss);
-@import url(./blocks/section-info.scss);
-@import url(./blocks/section-services.scss);
-@import url(./blocks/additional.scss);
-@import url(./blocks/advantages.scss);
-@import url(./blocks/footer.scss);
-@import url(./blocks/links.scss);
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -43,107 +33,61 @@
   src: local(""), url("../fonts/roboto-v29-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v29-latin-700.woff2") format("woff2"), url("../fonts/roboto-v29-latin-700.woff") format("woff"), url("../fonts/roboto-v29-latin-700.ttf") format("truetype"), url("../fonts/roboto-v29-latin-700.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
-img {
-  width: 100%;
-  height: auto;
-}
-
-.header {
-  width: 100%;
-}
-.header__wrapper {
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
 .section {
   width: 100%;
 }
 .section__wrapper {
   width: 100%;
   max-width: 1140px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .welcome-section {
   width: 100%;
 }
-@media (min-width: 768px) {
-  .welcome-section .welcome-section {
-    display: flex;
-  }
-}
-.welcome-section____container {
-  width: 100%;
-  max-width: 1140px;
-  margin: auto 0;
-}
 .welcome-section__title-h2 {
-  font-size: 48px;
-  color: #333333;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 36px;
+  line-height: 42px;
+  color: #333333;
 }
 .welcome-section__text {
-  color: #333333;
-  /*нет изменений почему?*/
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
-  top: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .welcome-section__term {
-  color: #333333;
-  font-size: 24px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  line-height: 24px;
 }
 
-.paragraph-1__title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 140%;
-  color: #333333;
-}
-.paragraph-1__item {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #333333;
-}
-
-.table-section__container {
-  display: flex;
-}
-.table-section__title {
-  color: #333333;
-  font-size: 36px;
-}
-.table-section__title-tab {
-  color: #2A7AC0;
-  font-size: 24px;
-}
-.table-section__text {
-  color: #333333;
-  font-size: 16px;
-}
-.table-section__fat {
-  color: #333333;
-  font-weight: 700;
+@media (min-width: 768px) {
+  .welcome-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .welcome-section__img {
+    max-width: 564px;
+    width: 47%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .welcome-section__text {
+    max-width: 540px;
+    width: 47%;
+  }
+  .welcome-section__logo {
+    max-width: 384px;
+    width: 37%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .welcome-section__title-h2 {
+    font-size: 48px;
+    line-height: 56px;
+  }
 }

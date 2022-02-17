@@ -1,52 +1,50 @@
 .welcome-section{
-   width: 100%;
-  @media (min-width: 768px){
-    .welcome-section{
-        display: flex;
-    }
-  }
-
-
-
-    &____container{
-        width: 100%;
-         max-width: 1140px;
-         margin: auto 0;
-    }
-   
+    width: 100%;
+    
     &__title-h2{
-        font-size: 48px;
-        color: #333333;
-        font-family: 'Roboto';
+        font-family: $fonts;
         font-style: normal;
         font-weight: 500;
-        font-size: 48px;
-        line-height: 56px;
-        
-
-        
+        font-size: 36px;
+        line-height: 42px;
+        color: #333333;
     }
+    
     &__text{
-        color: #333333;   /*нет изменений почему?*/
+        font-family: $fonts;
         font-size: 16px;
-        font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
         line-height: 24px;
-        
-        top: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-       
     }
     &__term{
-        color: #333333;
-        font-size: 24px;
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 24px;
-        line-height: 24px;
+    }
+}
+
+@media (min-width: $tablet) {
+    .welcome-section{
+        display: flex;
+        justify-content: space-between;
+
+        &__img{
+            max-width: 564px;
+            width: 47%;
+            object-fit: contain;
+        }
+        &__text{
+            max-width: 540px;
+            width: 47%;
+        }
+        &__logo{
+             max-width: 384px;
+             width: 37%;
+            object-fit: contain;
+        }
+        &__title-h2{
+            font-size: 48px;
+            line-height: 56px;
+        }
     }
 }

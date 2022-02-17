@@ -46,7 +46,7 @@ function css () {
         .pipe(dest('build/css'))
     } 
 function cssNomin () {
-    return src('./source/scss/**/*.scss')
+    return src('./source/scss/style.scss')
         .pipe(plumber())
         .pipe(sass()) 
         .pipe(autoprefixer())
