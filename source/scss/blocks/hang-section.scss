@@ -1,0 +1,24 @@
+.hang-section{
+    width: 100%;   
+    font-family: $fonts;
+    list-style-type: none;
+   
+
+
+    &__ul{
+        text-align: center;
+        width: 370px;
+        list-style-type: none;
+    
+    
+    &__li{
+        border: solid;
+    }    
+    }
+    
+
+
+    
+  
+    
+}

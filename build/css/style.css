@@ -44,6 +44,7 @@ img {
 
 .welcome-section {
   width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 .welcome-section__title-h2 {
   font-family: "Roboto", sans-serif;
@@ -90,4 +91,17 @@ img {
     font-size: 48px;
     line-height: 56px;
   }
+}
+.hang-section {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  list-style-type: none;
+}
+.hang-section__ul {
+  text-align: center;
+  width: 370px;
+  list-style-type: none;
+}
+.hang-section__ul__li {
+  border: solid;
 }
